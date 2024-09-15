@@ -1,10 +1,13 @@
 import  { useState } from 'react';
 import { collection,addDoc,getFirestore } from "firebase/firestore"; 
 import {app} from '../firebase'
+import { useNavigate } from 'react-router-dom';
 
 function Addfaculty() {
     const [name,setname] = useState('')
     const [phone,setphone] = useState(null)
+
+    const navigate = useNavigate()
 
     const submithandler = async (e) =>{
         e.preventDefault();
@@ -16,6 +19,7 @@ function Addfaculty() {
             phone : phone
         })
 
+        navigate('/dashboard/facultylist')
         console.log(docref,docref.id);
         
     }

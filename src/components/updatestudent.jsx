@@ -65,7 +65,7 @@ function UpdateStudent() {
                 
             })
             .then(() => {
-                navigate('/studentlist')
+                navigate('/dashboard/studentlist')
             })
             .catch((error)=>{
                 console.log(error);
@@ -90,6 +90,7 @@ function UpdateStudent() {
                 <input value={phone} onChange={(e) => setphone(e.target.value)} type="number" placeholder='phone number'/>
                 <input  type="file" onChange={handlefilechange}/>
                 <button type='submit'>update</button>
+
             </form>
         </div>
     );

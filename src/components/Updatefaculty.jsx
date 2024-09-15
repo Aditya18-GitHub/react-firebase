@@ -30,7 +30,7 @@ function Updatefaculty() {
 
             })
 
-            navigate('/facultylist')
+            navigate('/dashboard/facultylist')
 
         }catch(error){
             console.log(error);

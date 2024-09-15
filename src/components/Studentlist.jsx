@@ -47,7 +47,7 @@ function Studentlist() {
                                 <img style={{height:'6rem',width:'6rem'}} src={value.imageurl} alt="studentlogo" />
                                 <p>{value.name} {value.phone}</p>
                                 <button style={{marginRight:'1.5rem'}}  onClick={() => deletedata(key)}>delete</button>
-                                <button  onClick={() => navigate('/updatestudent',{state:[key,value]})}>updatestudent</button>
+                                <button  onClick={() => navigate('/dashboard/updatestudent',{state:[key,value]})}>updatestudent</button>
                              </div>
                         )
                     })}

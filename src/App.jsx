@@ -11,12 +11,21 @@ import Updatefaculty from './components/Updatefaculty'
 import Signup from './components/Signup'
 import Login from './components/Login'
 
-const router = createBrowserRouter([
-        
-  {path:'signup' ,Component : Signup},
-  {path:'login' ,Component : Login},
 
-  {path:'dashboard' , Component:Dashboard,children:[
+
+
+ 
+
+
+
+
+
+const router = createBrowserRouter([
+  {path:'' ,Component : Login},     
+  {path:'signup' ,Component : Signup},
+  
+
+  {path: 'dashboard' , Component:Dashboard,children:[
 
         {path : '',Component:Studentlist},
         {path : 'addstudent',Component:Addstudent},

@@ -49,7 +49,7 @@ function Facultylist() {
                     <div style={{marginLeft:'3rem'}} key={ele.id}>
                         <p>{ele.fname} {ele.phone}</p>
                         <button onClick={() => deletedata(ele.id)}>delete</button>
-                        <button  onClick={() => navigate('/updatefaculty',{state:ele})}>updatefaculty</button>
+                        <button  onClick={() => navigate('/dashboard/updatefaculty',{state:ele})}>updatefaculty</button>
                     </div>
                 ))
             }
